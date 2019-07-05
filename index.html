@@ -3,13 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Game Snake</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        h1 {
+            font-family: Arial;
+            color: red;
+            font-weight: bold;
+        }
+
+        h3 {
+            font-family: Arial;
+            color: blue;
+        }
+
+        html, body {
+            height: 100%;
+            margin: 0;
+        }
+
+        body {
+            background: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        canvas {
+            border: 1px solid white;
+        }
+    </style>
 </head>
 <body>
+
 <center>
     <h1>Game Snake</h1>
-    <h3 id="score">Score : 0</h3>
-    <canvas id="myCanvas" width="300" height="300" style="border: 1px solid brown"></canvas>
+    <h3 id="score">Score: 0</h3>
+    <canvas id="game" width="400" height="400"></canvas>
 </center>
 
 <script type="text/javascript" src="script.js">
